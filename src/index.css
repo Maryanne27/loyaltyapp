@@ -1,13 +1,512 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+:root{
+  --blue:#3051f1;
+  --purple:#c92bb7;
+  --btncolor: linear-gradient(112.92deg, #5404ff 18.35%, #bd3bd2 71.49%);
+  --white:#fcfcfc;
+}
+html{
+scroll-behavior: smooth;
+
+}
+body{
+  background: #13182a;
+  background: #121b27;
+  color: var(--white);
+  overflow-x: hidden;
+}
+section{
+  width: 100%;
+}
+.images{
+  display: none;
+}
+button{
+  background: var(--btncolor);
+  color: white;
+  display: inline-block;
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 20px;
+  width: 100%;
+
+}
+ .nav_btn{
+border:1px solid transparent; 
+background-image: var(--btncolor);
+width: 102px;
+height: 30px;
+text-align: center;
+overflow: hidden;
+border-radius: 30px;
+position: relative;
+color: white;
+z-index: 0;
+font-size: 13px;
+line-height:22px ;
+font-weight: 500;
+color: var(--white);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nav_btn::before{
+  content: '';
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  background-color:#13182a;
+  border-radius: 30px;
+  box-sizing: border-box;
+  z-index: -1;
+ 
+}
+
+.logo{
+ font-size: 22px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.bg{
+  width: 15px;
+ }
+.o {
+width: 5px;
+}
+.logo .o{
+  position: absolute;
+  left: 50px;
+  top: 44px;
+ }
+ .hero{
+   padding: 20px 25px;
+ }
+.hero h1{
+ font-size: 33px;
+ padding-bottom: 10px;
+ font-weight: bold;
+}
+.hero p{
+  padding-bottom: 5px;
+ 
+}
+
+.hero .purple{
+  color: #a75fd2;
+}
+.hero .btn{
+margin-top: 5px;
+}
+
+ .btn{
+padding: 5px 40px;
+  border-radius: 100px;
+ margin-bottom: 10px;
+ font-size: 13px;
+ color: var(--white);
+ width: 210px;
+}
+form input{
+  background: transparent;
+  border: 1px solid #eee;
+  margin-bottom: 15px;
+  color: white;
+  max-width: 100%;
+ 
+}
+::placeholder{
+  font-size: 10px;
+  color: white;
+}
+small{
+  display: block;
+  font-size: 12px;
+}
+.pink{
+  background:#a75fd2;
+  padding:1px 4px;
+  border-radius: 30px;
+}
+
+.blue{
+  background: #175ce1;
+  padding:1px 4px;
+  border-radius: 30px;
+}
+.joined{
+  margin-left: 4px;
+  text-align: center;
+}
+.about{
+  padding: 50px 25px;
+
+}
+.line img{
+  width: 90px;
+}
+.text h1{
+  font-size: 32px;
+  text-align: center;
+}
+ 
+.text p{
+  font-size: 16px;
+ color: var(--white);
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+.about .row{
+ gap: 10px;
+}
+
+.about form input{
+  display: flex;
+  align-items: center;
+ justify-content: center;
+ align-content: center;
+ margin-bottom: 20px;
+}
+
+.about .line{
+  display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.about .container{
+  background-color: #1d2939;
+  padding: 20px 0;
+  width: 360px;
+  margin: auto;
+  border-radius: 10px;
+}
+.about .input_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.container h3{
+font-size: 20px;
+padding: 15px 0;
+padding-left: 27px;
+}
+.about input {
+width: 300px;
+background: transparent;
+color: var(--white);
+margin: auto;
+}
+.about .form-select{
+width: 300px;
+background: transparent;
+margin-top: 20px;
+color: var(--white);
+font-size: 10px;
+margin: auto;
+}
+.form-control::placeholder{
+color: var(--white);
+}
+
+.about textarea{
+width: 300px;
+height: 100px;
+background: transparent;
+color: var(--white);
+resize: none;
+padding-left: 10px;
+padding-top: 10px;
+font-size: 10px;
+margin-bottom: 20px;
+border-radius: 8px;
+border-color: white;
+margin: auto;
+}
+.about .form-select{
+width: 300px;
+background: transparent;
+}
+input::placeholder{
+color: white;
+}
+.about .btn{
+  width: 300px;
+  margin: 20px 0;
+}
+.footer{
+  color: var(--white);
+
+}
+.footer .row{
+  padding-top: 20px;
+  text-align: center;
+  margin:20px 30px;
+  border-top: 1px solid white;
+}
+
+
+
+@media screen and (min-width:768px) {
+  .header{
+    padding: 20px 30px;
+  }
+  .hero p{
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+ 
+  .hero{
+    width: 100%;
+  }
+  
+  .hero h1{
+    font-size: 44px;
+    padding-bottom: 20px;
+  }
+  
+  .images{
+    display: none ;
+  }
+  .text{
+    width: 600px;
+    margin:0  auto;
+    
+  }
+   .text p{
+     font-size: 20px;
+     margin-top: 5px;
+   }
+}
+
+
+@media screen and (min-width:1024px) {
+  body{
+    position: relative;
+    overflow-x: hidden;
+  }
+  .assets .circlebg{
+    position: absolute;
+   right: 0.25%;
+   bottom: 0.35%;
+  }
+  .assets img{
+    width: 210px;
+  }
+  .assets3 .arrow{
+    position: absolute;
+    bottom: 40%;
+    left: 66%;
+  }
+  .assets3 img{
+    width: 50px;
+  }
+  .assets2 .starmd{
+    position: absolute;
+    right: 10%;
+   bottom: 0.13%;
+  }
+  .assets2 img{
+    width: 20px;
+  }
+.assets1 .starsm{
+  position: absolute;
+  top: 10%;
+  left: 32%;
+}
+
+.assets4 .circlemd{
+  position: absolute;
+  top: 15%;
+  left: 6%;
+}
+.starsm2{
+  position: absolute;
+  top: 25%;
+  right: 17%;
+}
+.starmd2{
+  position: absolute;
+  left: 11%;
+  bottom: 0.55%;
+}
+.circlesm2{
+  position: absolute;
+  left: 10%;
+  bottom: 49%;
+}
+.starsm3{
+  position: absolute;
+  left: 27%;
+  bottom: 45%;
+}
+.starmd3{
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+}
+
+.starmd4{
+  position: absolute;
+  left: 48%;
+  bottom: 22%;
+}
+.assets5 .circlesm{
+  position: absolute;
+    top: 0.25%;
+    right: 13%;
+}
+.assets5 img{
+  width: 50px;
+}
+.assets4 img{
+  width: 100px;
+}
+.assets1 img{
+  width: 15px;
+}
+
+
+  .header{
+    padding: 30px 50px;
+  
+  }
+   .nav_btn{
+  font-size: 16px;
+  width: 132px;
+ 
+  }
+  
+  .logo{
+   font-size: 30px;
+  }
+
+  .hero p{
+    font-size: 16px;
+    padding-bottom: 10px;
+   width: 650px;
+   margin: auto;
+  }
+ 
+  .hero{
+    margin: 20px auto;
+    width: 100%;
+    position: relative;
+   
+  }
+  
+  .hero h1{
+    font-size: 50px;
+    padding-bottom: 20px;
+    font-weight: bold;
+  }
+  .hero .btn{
+    padding: 10px 40px;
+      border-radius: 100px;
+     margin-bottom: 10px;
+     margin-top: 5px;
+     font-size: 13px;
+     font-weight: 600;
+     color: var(--white);
+     width: 33%;
+    }
+    form input{
+      width: 33% ;
+      padding: 20px auto;
+      margin-bottom: 15px;
+    }
+    ::placeholder{
+      font-size: 14px;
+    }
+   .text{
+     width: 440px;
+     margin:0  auto;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+   }
+    .text p{
+      font-size: 20px;
+      margin-top: 5px;
+      text-align: left;
+      width: 450px;
+    }
+    .text h1{
+      font-size: 45px;
+      text-align: left;
+    }
+    .about, .hero{
+      padding: 100px 50px;
+    }
+    .line img{
+      width: 100px;
+    }
+    /* .about .text{
+     padding:70px 0;
+    } */
+    .about .line{
+      display: block;
+      position: relative;
+      left: 70px;
+     
+    } 
+    
+    .about .container{
+        width: 400px;
+        margin: 0 auto;
+       
+    }
+    .container h3{
+      font-size: 20px;
+     
+    }
+  .about input {
+    width: 320px;
+    background: transparent;
+    color: var(--white);
+  }
+  .about .formselect{
+    width: 320px;
+    background: transparent;
+    color: var(--white);
+    font-size: 14px;
+
+  }
+  
+
+ .about textarea{
+    width: 320px;
+    background: transparent;
+    color: var(--white);
+   font-size: 14px;
+  }
+  .about .btn{
+    width: 320px;
+    margin: 20px 0;
+  }
+  header{
+    padding: 20px 50px;
+  }
+  .footer{
+   width: 100%;
+  }
+  .footer .row {
+text-align: center;
+margin:20px 70px;
+border-top: 1px solid white;
+  }
+  
+  .images{
+    display: block;
+  }
 }
