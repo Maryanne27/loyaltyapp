@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
-// import imgicon from '../assets/imgicon.png'
-// import mail from '../assets/mailicon.png'
+import imgicon from '../assets/imgiconn.png'
+import mail from '../assets/mailicon.png'
 import starsm from '../assets/Star 3.png'
 import starmd from '../assets/Star 1.png'
 import circlesm from '../assets/circlesm.png'
 import circlemd from '../assets/circlemd.png'
 import circlebg from '../assets/circlebg.png'
 import arrow from '../assets/arrow.png'
-//import {FaImage} from 'react-icons/fa'
+
 
 function Hero() {
  return (
@@ -44,10 +44,14 @@ function Hero() {
         <p>Get ready to revolutionize the way you interact with your customers and drive sales with Loyalbaze.
            Join the waiting list now to be among the first to experience the future of the customer loyalty.</p>
         <form action="" className='pt-3'>
-   
+   <div className="input">
+     <img src={imgicon} alt="" className='icon'/>
         <input type="text" placeholder='Tell us your name' className='py-1 px-2'/>
-        <br/>
+        </div>
+        <div className="input">
+          <img src={mail} alt="" className='icon'/>
         <input type="email" placeholder='Enter your email address' className='py-1 px-2'/>
+        </div>  
         </form>
       
         <button className='btn'>Get early access</button>

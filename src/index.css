@@ -42,7 +42,7 @@ button{
  .nav_btn{
 border:1px solid transparent; 
 background-image: var(--btncolor);
-width: 102px;
+width: 122px;
 height: 30px;
 text-align: center;
 overflow: hidden;
@@ -50,7 +50,7 @@ border-radius: 30px;
 position: relative;
 color: white;
 z-index: 0;
-font-size: 13px;
+font-size: 11px;
 line-height:22px ;
 font-weight: 500;
 color: var(--white);
@@ -104,7 +104,22 @@ width: 5px;
 .hero .btn{
 margin-top: 5px;
 }
+form{
+  position: relative;
+}
+.input img{
+  position: absolute;
+  margin-left: 6px;
+ }
 
+.input{
+  width: 100%;
+}
+.input .icon{
+  width: 12px;
+  padding-top: 13px;
+
+}
  .btn{
 padding: 5px 40px;
   border-radius: 100px;
@@ -124,6 +139,7 @@ form input{
 ::placeholder{
   font-size: 10px;
   color: white;
+  padding-left: 15px;
 }
 small{
   display: block;
@@ -247,6 +263,9 @@ color: white;
 .footer{
   color: var(--white);
 
+}
+.footer p{
+  font-size: 13px;
 }
 .footer .row{
   padding-top: 20px;
@@ -382,7 +401,7 @@ color: white;
   
   }
    .nav_btn{
-  font-size: 16px;
+  font-size: 12px;
   width: 132px;
  
   }

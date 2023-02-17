@@ -24,7 +24,7 @@ function About() {
       </div>
       <div className='row'>
         <div className='col-lg-6 text'>
-          <h1>What we do</h1>
+          <h1>Priority Acess</h1>
           <div className='line'>
             <img src={line} alt="" />
           </div>

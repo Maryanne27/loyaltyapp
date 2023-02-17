@@ -10,7 +10,7 @@ function Nav() {
           <img src={logobg} className='bg'/>
          <img src={logoinner} className='o'/>
           <span className='y'>yalbaze</span></h1>
-        <button className='nav_btn'>Request a call</button>
+        <button className='nav_btn'>Get Priority Access</button>
     </div>
   )
 }
